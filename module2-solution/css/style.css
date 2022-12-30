@@ -1,1 +1,70 @@
+* {
+    box-sizing: border-box;
+}
 
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sm, .md, .lg {
+    background-color: gray;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.he {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-top: 0px;
+    border-right: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    text-overflow: clip;
+    font-size: 20px;
+    width: 25%;
+    right: 0px;
+}
+
+p {
+    margin-bottom: 9px;
+    position: relative;
+    padding-left: 1%;
+    padding-bottom: 1px;
+    top: 10px;
+    width: 99%;
+}
+
+/* TABLET VIEW */
+@media (min-width: 768px) and (max-width: 991px) {
+    .md {
+        float: left;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        width: 49%;
+        flex: 1;
+    }
+
+    #oddbox {
+        clear: both;
+    }
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 992px) {
+    .root {
+        display: flex;
+    }
+    .lg {
+        float: left;
+        margin: 2px;
+        width: 33%;
+        flex: 1;
+    }
+}
